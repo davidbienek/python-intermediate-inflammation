@@ -1,8 +1,11 @@
 """Tests for the Patient model."""
 
+from inflammation.models import Patient
+
 
 def test_create_patient():
-    from inflammation.models import Patient
+    """Test that model works for a Patient.
+    """
 
     name = 'Alice'
     p = Patient(name=name)
